@@ -19,8 +19,12 @@ if test "$RECOVERY" != "yes"; then
 fi
 
 # Ensure Android version
+if test "$SDK" -lt "23"; then
+	geco "\n[!!!] This package only supports Android6-Android 9" && exit 101
+fi
+
 if test "$SDK" -gt "28"; then
-	geco "\n[!!!] This package does not support OS higher than Android 9" && exit 101
+	geco "\n[!!!] This package only supports Android6-Android 9" && exit 101
 fi
 
 # Check if /system is writable
