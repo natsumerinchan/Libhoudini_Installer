@@ -19,19 +19,14 @@ if test "$RECOVERY" != "yes"; then
 fi
 
 # Ensure Android version
-if test "$SDK" != "28"; then
-	geco "\n[!!!] This package only support Android9!" && exit 101
-fi
-
-# Ensure Device Architecture
-if test "$HOST_ARCH" != "x86_64"; then
-	geco "\n[!!!] This package only support x86_64 devices!" && exit 101
+if test "$SDK" -gt "28"; then
+	geco "\n[!!!] This package does not support OS higher than Android 9" && exit 101
 fi
 
 # Check if /system is writable
 ! touch -c "$SYSTEM_DIR/lib" >/dev/null 2>&1 && geco "[!!!] $SYSTEM_DIR is not writable, did you ${PINK}SuperCharge${RC} it yet ?" && exit 101
 
-# Delete the original arm translation layer
+# Delete the original arm translation
 nout rm -rf "$SYSTEM_DIR/bin/houdini"
 nout rm -rf "$SYSTEM_DIR/bin/arm/linker"
 nout rm -rf "$SYSTEM_DIR/lib/libhoudini.so"
