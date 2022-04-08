@@ -11,7 +11,6 @@ x86/x86_64 Android6 - Android9
 1.  Download package from [Releases tag](https://github.com/natsumerinchan/Libhoudini_Installer/releases)
 2.  Download houdini.sfs from https://github.com/SGNight/Arm-NativeBridge
 3.  Rename your houdini.sfs 
- 
 <details>
 <summary>example</summary>
  
