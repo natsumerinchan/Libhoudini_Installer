@@ -26,5 +26,7 @@ example:
  
 4.  Open this package as a .7z file by 7-Zip or NanaZip,put houdini.sfs into $Package_root_directory/system/etc directory
 5.  Install this package by Gearlock Recovery mode
+6.  Go to Settings and turn on the arm compatibility switch,reboot.
+7.  Enjoy!
 
 
