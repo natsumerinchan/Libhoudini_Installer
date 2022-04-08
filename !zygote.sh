@@ -8,7 +8,7 @@ CODENAME="libhoudini_installer" #An Unique codename
 
 TYPE="Package" #Specify (Package / Extension)
 
-AUTHOR="natsumerinchan@github/gitee" #Your name as the Developer/Owner/Packer
+AUTHOR="natsumerinchan@github&gitee" #Your name as the Developer/Owner/Packer
 
 VERSION="v1.0" #Specify the Version of this package/extension
 
