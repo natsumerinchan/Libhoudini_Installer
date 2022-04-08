@@ -26,14 +26,6 @@ fi
 # Check if /system is writable
 ! touch -c "$SYSTEM_DIR/lib" >/dev/null 2>&1 && geco "[!!!] $SYSTEM_DIR is not writable, did you ${PINK}SuperCharge${RC} it yet ?" && exit 101
 
-# Delete the original arm translation
-nout rm -rf "$SYSTEM_DIR/bin/houdini"
-nout rm -rf "$SYSTEM_DIR/bin/arm/linker"
-nout rm -rf "$SYSTEM_DIR/lib/libhoudini.so"
-nout rm -rf "$SYSTEM_DIR/lib/arm/*"
-nout rm -rf "$SYSTEM_DIR/vendor/lib/libhoudini.so"
-nout rm -rf "$SYSTEM_DIR/vendor/etc/binfmt_misc/*"
-
 # Copy files
 geco "+ Merging files in your operating-system"
 gclone "$BD/system/" "$SYSTEM_DIR" # You must use quotes " " if any of your file-name contains *spaces or special characters
