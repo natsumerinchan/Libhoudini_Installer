@@ -13,7 +13,7 @@ x86/x86_64 Android6 - Android9
 3.  Rename your houdini.sfs 
  
 <details>
-<summary>example:</summary>
+<summary>example</summary>
  
 - Android version:Android9
 - System architecture:x86_64
