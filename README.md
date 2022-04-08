@@ -17,4 +17,4 @@ x86/x86_64 Android6 - Android9
 - System architecture:x86_64
 - rename_to:houdini9_y.sfs
 - "9" is Android version,"y" is system architecture
-- "x"=arm32 for x86 cpu;"y"=arm32 for x86_64 cpu;"z"=arm64 for x86_64 cpu
+- "x"=arm32 for x86 system;"y"=arm32 for x86_64 system;"z"=arm64 for x86_64 system
