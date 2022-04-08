@@ -12,9 +12,9 @@ x86/x86_64 Android6 - Android9
 2.  Download houdini.sfs from https://github.com/Rprop/libhoudini
 3.  Rename your houdini.sfs 
  
- example:
-
+ example1:
 - Android version:Android9
+- System architecture:x86_64
 - rename_to:houdini9_y.sfs
 - "9" is Android version,"y" is system architecture
 - "x"=arm32 for x86 cpu;"y"=arm32 for x86_64 cpu;"z"=arm64 for x86_64 cpu
