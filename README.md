@@ -8,7 +8,7 @@ x86/x86_64 Android6 - Android9
 
 #### 3.Instructions
 
-1.  Download package from Releases tag
+1.  Download package from [Releases tag](https://github.com/natsumerinchan/Libhoudini_Installer/releases)
 2.  Download houdini.sfs from https://github.com/Rprop/libhoudini
 3.  Rename your houdini.sfs 
 example:
