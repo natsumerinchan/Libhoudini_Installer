@@ -12,9 +12,8 @@ x86/x86_64 Android6 - Android9
 2.  Download houdini.sfs from https://github.com/SGNight/Arm-NativeBridge
 3.  Rename your houdini.sfs 
  
-example:
 <details>
-<summary>Show all</summary>
+<summary>example:</summary>
  
 - Android version:Android9
 - System architecture:x86_64
