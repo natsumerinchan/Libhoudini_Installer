@@ -16,4 +16,5 @@
 
 geco "\n++ Deleting the Arm translation layer"
 
+nout rm -rf "$SYSTEM_DIR/etc/houdini9_x.sfs"
 nout rm -rf "$SYSTEM_DIR/etc/houdini9_y.sfs"
