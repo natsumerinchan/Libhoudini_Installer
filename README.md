@@ -12,9 +12,11 @@ x86/x86_64 Android6 - Android9
 2.  Download houdini.sfs from https://github.com/SGNight/Arm-NativeBridge
 3.  Rename your houdini.sfs 
  
- example1:
+ example:
 - Android version:Android9
 - System architecture:x86_64
 - rename_to:houdini9_y.sfs
 - "9" is Android version,"y" is system architecture
 - "x"=arm32 for x86 system;"y"=arm32 for x86_64 system;"z"=arm64 for x86_64 system
+4.  Open this package as a .7z file by 7-Zip or NanaZip,put houdini.sfs into $Package_root_directory/system/etc directory
+5.  Install this package by Gearlock Recovery mode
