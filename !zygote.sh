@@ -2,17 +2,17 @@
 #######################################################################################################
 #####=============================== Package/Extension Information ===============================#####
 
-NAME="Libhoudini_Android9_x86_64" #Package/Extension Name
+NAME="Libhoudini_Installer" #Package/Extension Name
 
-CODENAME="libhoudini_android9_x86_64" #An Unique codename
+CODENAME="libhoudini_installer" #An Unique codename
 
 TYPE="Package" #Specify (Package / Extension)
 
-AUTHOR="natsumerin" #Your name as the Developer/Owner/Packer
+AUTHOR="natsumerin@gitee" #Your name as the Developer/Owner/Packer
 
 VERSION="v1.0" #Specify the Version of this package/extension
 
-SHORTDESC="Install the ARM translation to x86_64 Android9" #Provide a short description about this package/extension
+SHORTDESC="Install libhoudini translation on Android-x86 when you have installed magisk." #Provide a short description about this package/extension
 
 C_EXTNAME="" #For Specifing a custom name for your extension script ($NAME is used if not defined)
 
