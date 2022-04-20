@@ -13,8 +13,8 @@ x86/x86_64 Android6 - Android9
 3.  Rename your houdini.sfs to houdiniα_β.sfs .
 
 
-- "α" is Android version,it can be 6,7,8,9
-- "β" is system architecture ,it can be x,y,z ; "x"=arm32 for x86 system;"y"=arm32 for x86_64 system;"z"=arm64 for x86_64 system
+- "α" is Android version,it can be "6","7“,"8","9"
+- "β" is system architecture ,it can be "x","y","z" ; "x"=arm32 for x86 system;"y"=arm32 for x86_64 system;"z"=arm64 for x86_64 system
 
 
 4.  Open this package as a .7z file by 7-Zip or NanaZip,put houdini.sfs into $Package_root_directory/system/etc directory
