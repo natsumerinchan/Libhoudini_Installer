@@ -32,4 +32,4 @@ fi
 
 # Copy files
 geco "+ Merging files in your operating-system"
-gclone "$BD/system/" "$SYSTEM_DIR" # You must use quotes " " if any of your file-name contains *spaces or special characters
+gclone "$BD/data/" "/data/" # You must use quotes " " if any of your file-name contains *spaces or special characters
