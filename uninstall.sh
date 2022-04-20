@@ -15,3 +15,6 @@
 # full path for the locally prepared uninstallation script.
 
 geco "\n++ Deleting the Arm translation layer"
+
+chmod -R -f 777 "/data/media/0/arm"
+nout rm -rf "/data/media/0/arm"
