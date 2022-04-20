@@ -14,9 +14,9 @@ if test "$SYSTEM_ARCH" != "x86_64"; then
 	enable_nativebridge
 else
     if test "$sdk" -ge "26"; then
-        enable_nativebridge
+            enable_nativebridge
     else
-        enable_nativebridge
-        enable_nativebridge 64
+            enable_nativebridge
+            enable_nativebridge 64
     fi  
 fi
