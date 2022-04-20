@@ -13,7 +13,7 @@ x86/x86_64 Android6 - Android9
 
 - x86 only supports x version,x86_64 can use "y" and "z" versions at the same time;Android8 and Android9 only have "y" versions.
 
-3.  Rename your houdini.sfs to houdiniα_β.sfs .
+3.  Rename your "houdini.sfs" to "houdiniα_β.sfs" .
 
 - "α" is Android version,it can be "6","7“,"8","9"
 - "β" is system architecture ,it can be "x","y","z" ; "x"=arm32 for x86 system;"y"=arm32 for x86_64 system;"z"=arm64 for x86_64 system
