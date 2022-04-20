@@ -18,13 +18,24 @@ if test "$RECOVERY" != "yes"; then
 	geco "\n[!!!] Please use Recovery mode to install this package" && exit 101
 fi
 
+# Show sdk version and device architecture
+
+if test -d "$SYSTEM_DIR/lib64/hw"; then
+	SYSTEM_ARCH=x86_64
+else
+	SYSTEM_ARCH=x86
+fi
+
+geco "-SDK: $SDK"
+geco "-Platform: $SYSTEM_ARCH"
+
 # Ensure Android version
 if test "$SDK" -lt "23"; then
-	geco "\n[!!!] This package only supports Android6-Android 9" && exit 101
+	geco "\n[!!!] This package only supports Android6(sdk23)-Android9(sdk28)" && exit 101
 fi
 
 if test "$SDK" -gt "28"; then
-	geco "\n[!!!] This package only supports Android6-Android 9" && exit 101
+	geco "\n[!!!] This package only supports Android6(sdk23)-Android9(sdk28)" && exit 101
 fi
 
 # Check if /system is writable
