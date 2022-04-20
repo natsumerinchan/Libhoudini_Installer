@@ -15,16 +15,3 @@
 # full path for the locally prepared uninstallation script.
 
 geco "\n++ Deleting the Arm translation layer"
-
-nout rm -rf "$SYSTEM_DIR/etc/houdini6_x.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini6_y.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini6_z.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini7_x.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini7_y.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini7_z.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini8_x.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini8_y.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini8_z.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini9_x.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini9_y.sfs"
-nout rm -rf "$SYSTEM_DIR/etc/houdini9_z.sfs"
