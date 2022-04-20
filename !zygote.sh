@@ -12,7 +12,7 @@ AUTHOR="natsumerinchan@github&gitee" #Your name as the Developer/Owner/Packer
 
 VERSION="v1.0" #Specify the Version of this package/extension
 
-SHORTDESC="Install libhoudini arm translation on Android-x86 when you have installed magisk." #Provide a short description about this package/extension
+SHORTDESC="Install libhoudini arm translation on Android-x86 when you have replaced root manager by Magisk." #Provide a short description about this package/extension
 
 C_EXTNAME="" #For Specifing a custom name for your extension script ($NAME is used if not defined)
 
