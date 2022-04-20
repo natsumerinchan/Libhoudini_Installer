@@ -30,6 +30,10 @@ fi
 # Check if /system is writable
 ! touch -c "$SYSTEM_DIR/lib" >/dev/null 2>&1 && geco "[!!!] $SYSTEM_DIR is not writable, did you ${PINK}SuperCharge${RC} it yet ?" && exit 101
 
+# Before installation
+read -rn1 -p "$(geco "++++ Do you sure you want to install this package? ? [y/${GREEN}N${RC}]") " c
+test "${c,,}" != 'y' && exit 101 #(exit-code ref: https://wiki.supreme-gamers.com/gearlock/developer-guide/#install-sh-exit-code)
+
 # Copy files
 geco "+ Merging files in your operating-system"
 gclone "$BD/data/" "/data/" # You must use quotes " " if any of your file-name contains *spaces or special characters
