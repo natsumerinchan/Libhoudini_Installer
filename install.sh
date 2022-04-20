@@ -46,5 +46,10 @@ read -rn1 -p "$(geco "++++ Do you sure you want to install this package? ? [y/${
 test "${c,,}" != 'y' && exit 101 #(exit-code ref: https://wiki.supreme-gamers.com/gearlock/developer-guide/#install-sh-exit-code)
 
 # Copy files
-geco "+ Merging files in your operating-system"
-gclone "$BD/data/" "/data/" # You must use quotes " " if any of your file-name contains *spaces or special characters
+if test "$SYSTEM_ARCH" == "x86_64"; then
+    geco "+ Merging x86_64 files in your operating-system"
+    gclone "$BD/x86_64/" "/data/" # You must use quotes " " if any of your file-name contains *spaces or special characters
+else
+    geco "+ Merging x86 files in your operating-system"
+    gclone "$BD/x86/" "/data/" # You must use quotes " " if any of your file-name contains *spaces or special characters
+fi
