@@ -4,7 +4,7 @@
 用于给Android-x86安装libhoudini arm兼容层的gearlock扩展包
 
 #### 2.制作原因
-把Android-x86的root提权方式换成magisk后会使旧的libhoudini安装方式重启就失效
+把Android-x86的root方式换成magisk后会让旧的libhoudini安装方式一重启就失效
 
 #### 3.支持系统
 x86/x86_64 Android6 - Android9
