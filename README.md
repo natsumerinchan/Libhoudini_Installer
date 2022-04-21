@@ -11,7 +11,9 @@ x86/x86_64 Android6 - Android9
 1.  Download package from [Releases tag](https://github.com/natsumerinchan/Libhoudini_Installer/releases)
 2.  Download houdini.sfs from https://github.com/SGNight/Arm-NativeBridge
 
-- x86 only supports "x" version,x86_64 can use "y" and "z" versions at the same time;Android8 and Android9 only have "y" versions.
+- x86 only supports "x" version.
+- x86_64 can use "y" and "z" versions at the same time.
+- Android8 and Android9 only have "y" versions.
 
 3.  Rename your "houdini.sfs" to "houdiniα_β.sfs" .
 
