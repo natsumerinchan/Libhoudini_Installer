@@ -4,14 +4,14 @@
 用于给Android-x86安装libhoudini arm兼容层的gearlock扩展包
 
 #### 2.制作原因
-把Android-x86的root方式换成magisk后会让旧的libhoudini安装方式一重启就失效
+把Android-x86的root方式换成magisk后手动执行enable_nativebridge命令开启arm兼容会提示权限不足（system分区没有挂载为可读写），按Alt + F1进入后台终端挂载system分区执行命令的话系统重启后就会失效
 
 #### 3.支持系统
 x86/x86_64 Android6 - Android9
 
 #### 4.使用方法
 
-1.  [下载Libhoudini_Installer](https://gitee.com/natsumerinchan/Libhoudini_Installer/releases)
+1.  [下载Libhoudini_Installer](https://github.com/natsumerinchan/Libhoudini_Installer/releases)
 2.  下载houdini.sfs https://github.com/SGNight/Arm-NativeBridge
 
 - x86 系统只支持"x"版本;x86_64 系统可同时使用"y"和"z"版本;Android8、Android9只存在"y"版本
@@ -31,3 +31,6 @@ x86/x86_64 Android6 - Android9
 5.  进入Gearlock Recovery安装本模块
 6.  进入设置打开arm兼容开关，重启
 7.  Enjoy!
+
+#### 5.原理
+
