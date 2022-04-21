@@ -34,5 +34,3 @@ x86/x86_64 Android6 - Android9
 6.  进入设置打开arm兼容开关，重启
 7.  Enjoy!
 
-#### 5.原理
-
