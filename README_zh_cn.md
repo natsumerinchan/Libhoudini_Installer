@@ -1,5 +1,7 @@
 # Libhoudini_Installer
 
+[ **English** ](https://gitee.com/natsumerinchan/Libhoudini_Installer)
+
 #### 1.介绍
 用于给Android-x86安装libhoudini arm兼容层的gearlock扩展包
 
