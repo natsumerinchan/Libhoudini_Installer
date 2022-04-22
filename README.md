@@ -15,7 +15,7 @@ x86/x86_64 Android6 - Android9
 
 - x86 only supports "x" version.
 - x86_64 can use "y" and "z" versions at the same time.
-- Android8 doesn't have "z" version and Android9 only has "y" version.
+- Android8 and Android9 only have "y" versions.
 
 3.  Rename your "houdini.sfs" to "houdiniα_β.sfs" .
 
