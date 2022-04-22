@@ -18,7 +18,7 @@ x86/x86_64 Android6 - Android9
 
 - x86 系统只支持"x"版本
 - x86_64 系统可同时使用"y"和"z"版本
-- Android8没有"z"版本，Android9只存在"y"版本
+- Android8和Android9只存在"y"版本
 
 3.  把你下载的 "houdini.sfs" 重命名为 "houdiniα_β.sfs" .
 
