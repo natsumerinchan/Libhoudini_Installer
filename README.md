@@ -10,7 +10,7 @@ x86/x86_64 Android6 - Android9
 
 #### 3.Instructions
 
-1.  Download package from [Releases tag](https://github.com/natsumerinchan/Libhoudini_Installer/releases)
+1.  Download Libhoudini_Installer from [Releases tag](https://github.com/natsumerinchan/Libhoudini_Installer/releases)
 2.  Download houdini.sfs from https://github.com/SGNight/Arm-NativeBridge
 
 - x86 only supports "x" version.
