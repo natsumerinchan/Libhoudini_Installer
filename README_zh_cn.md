@@ -1,6 +1,6 @@
 # Libhoudini_Installer
 
- **简体中文** [ **English** ](README.md)
+ **简体中文** || [ **English** ](README.md)
 
 #### 1.介绍
 用于给Android-x86安装libhoudini arm兼容层的gearlock扩展包
