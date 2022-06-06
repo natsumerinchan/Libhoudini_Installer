@@ -1,6 +1,6 @@
 # Libhoudini_Installer
 
-[ **简体中文** ](README_zh_cn.md) **English**
+[ **简体中文** ](README_zh_cn.md) || **English**
 
 #### 1.Introduction
 A Gearlock package for install libhoudini arm translation on Android-x86 when you have replaced root manager by Magisk.
