@@ -8,7 +8,7 @@ CODENAME="libhoudini" #An Unique codename
 
 TYPE="Package" #Specify (Package / Extension)
 
-AUTHOR="natsumerinchan@github&gitee" #Your name as the Developer/Owner/Packer
+AUTHOR="natsumerinchan" #Your name as the Developer/Owner/Packer
 
 VERSION="v1.1" #Specify the Version of this package/extension
 
