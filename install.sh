@@ -40,10 +40,6 @@ if test "$SDK" -lt "$HOUDINI_API"; then
 	geco "\n[!!!] API_Level could not lower than $HOUDINI_API." && exit 101
 fi
 
-# Before installation
-read -rn1 -p "$(geco "++++ Do you want to continue? ? [y/${GREEN}N${RC}]") " c
-test "${c,,}" != 'y' && exit 101 #(exit-code ref: https://wiki.supreme-gamers.com/gearlock/developer-guide/#install-sh-exit-code)
-
 # Check Built-in Arm Translation
 if test -d "$SYSTEM_DIR/lib/arm"; then
 	geco "\n[!!!] Arm Translation is exist!Please find a way to remove built-in one." && exit 101
@@ -54,6 +50,10 @@ else
 	    geco "\n[!!!] Built-in Arm Translation is not exist.You can continue."
 	fi
 fi
+
+# Before installation
+read -rn1 -p "$(geco "++++ Do you want to continue? ? [y/${GREEN}N${RC}]") " c
+test "${c,,}" != 'y' && exit 101 #(exit-code ref: https://wiki.supreme-gamers.com/gearlock/developer-guide/#install-sh-exit-code)
 
 # Copy files
 if test "$SYSTEM_ARCH" == "x86_64"; then
