@@ -2,7 +2,7 @@
 #######################################################################################################
 #####=============================== Package/Extension Information ===============================#####
 
-NAME="Libhoudini_Installer" #Package/Extension Name
+NAME="Libhoudini_Android7" #Package/Extension Name
 
 CODENAME="libhoudini" #An Unique codename
 
