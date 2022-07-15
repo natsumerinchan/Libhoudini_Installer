@@ -44,45 +44,16 @@ fi
 read -rn1 -p "$(geco "++++ Do you want to continue? ? [y/${GREEN}N${RC}]") " c
 test "${c,,}" != 'y' && exit 101 #(exit-code ref: https://wiki.supreme-gamers.com/gearlock/developer-guide/#install-sh-exit-code)
 
-# Remove Built-in Arm Translation
-
-# Delete the original libhoudini
-nout rm -rf "$SYSTEM_DIR/etc/binfmt_misc/*"
-nout rm -rf "$SYSTEM_DIR/vendor/etc/binfmt_misc/*"
-# 32 bit
-nout rm -rf "$SYSTEM_DIR/bin/houdini"
-nout rm -rf "$SYSTEM_DIR/bin/arm"
-nout rm -rf "$SYSTEM_DIR/vendor/bin/houdini"
-nout rm -rf "$SYSTEM_DIR/vendor/bin/arm"
-nout rm -rf "$SYSTEM_DIR/lib/libhoudini.so"
-nout rm -rf "$SYSTEM_DIR/lib/arm"
-nout rm -rf "$SYSTEM_DIR/vendor/lib/libhoudini.so"
-nout rm -rf "$SYSTEM_DIR/vendor/lib/arm"
-# 64 bit
-nout rm -rf "$SYSTEM_DIR/bin/houdini64"
-nout rm -rf "$SYSTEM_DIR/bin/arm64"
-nout rm -rf "$SYSTEM_DIR/vendor/bin/houdini64"
-nout rm -rf "$SYSTEM_DIR/vendor/bin/arm64"
-nout rm -rf "$SYSTEM_DIR/lib64/libhoudini.so"
-nout rm -rf "$SYSTEM_DIR/lib64/arm64"
-nout rm -rf "$SYSTEM_DIR/vendor/lib64/libhoudini.so"
-nout rm -rf "$SYSTEM_DIR/vendor/lib64/arm64"
-
-# Delete libndk_translation
-# 32 bit
-nout rm -rf "$SYSTEM_DIR/bin/ndk_translation_program_runner_binfmt_misc"
-nout rm -rf "$SYSTEM_DIR/bin/arm"
-nout rm -rf "$SYSTEM_DIR/etc/ld.config.arm.txt"
-nout rm -rf "$SYSTEM_DIR/lib/libndk_translation.so"
-nout rm -rf "$SYSTEM_DIR/lib/libndk_translation_proxy_*.so"
-nout rm -rf "$SYSTEM_DIR/lib/arm"
-# 64 bit
-nout rm -rf "$SYSTEM_DIR/bin/ndk_translation_program_runner_binfmt_misc_arm64"
-nout rm -rf "$SYSTEM_DIR/bin/arm64"
-nout rm -rf "$SYSTEM_DIR/etc/ld.config.arm64.txt"
-nout rm -rf "$SYSTEM_DIR/lib64/libndk_translation.so"
-nout rm -rf "$SYSTEM_DIR/lib64/libndk_translation_proxy_*.so"
-nout rm -rf "$SYSTEM_DIR/lib64/arm64"
+# Check Built-in Arm Translation
+if test -d "$SYSTEM_DIR/lib/arm"; then
+	geco "\n[!!!] Arm Translation is exist!Please find a way to remove built-in one." && exit 101
+else
+	if test -d "$SYSTEM_DIR/lib64/arm64"; then
+	    geco "\n[!!!] Arm Translation is exist!Please find a way to remove built-in one." && exit 101
+	else
+	    geco "\n[!!!] Built-in Arm Translation is not exist.You can continue."
+	fi
+fi
 
 # Copy files
 if test "$SYSTEM_ARCH" == "x86_64"; then
