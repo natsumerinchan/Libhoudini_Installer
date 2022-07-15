@@ -6,7 +6,7 @@
 get_base_dir # Returns execution directory path in $BD variable
 # get_net_stat
 check_compat 7.2.22
-HOUDINI_API=24
+HOUDINI_API=26
 #####--- Import Functions ---#####
 
 # Ensure compatible GearLock version
@@ -85,10 +85,5 @@ nout rm -rf "$SYSTEM_DIR/lib64/libndk_translation_proxy_*.so"
 nout rm -rf "$SYSTEM_DIR/lib64/arm64"
 
 # Copy files
-if test "$SYSTEM_ARCH" == "x86_64"; then
-    geco "+ Merging x86_64 files in your operating-system"
-    gclone "$BD/x86_64/" "/data/" # You must use quotes " " if any of your file-name contains *spaces or special characters
-else
-    geco "+ Merging x86 files in your operating-system"
-    gclone "$BD/x86/" "/data/" # You must use quotes " " if any of your file-name contains *spaces or special characters
-fi
+geco "+ Merging files in your operating-system"
+gclone "$BD/data/" "/data/" # You must use quotes " " if any of your file-name contains *spaces or special characters
