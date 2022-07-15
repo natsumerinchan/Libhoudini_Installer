@@ -6,7 +6,7 @@
 get_base_dir # Returns execution directory path in $BD variable
 # get_net_stat
 check_compat 7.2.22
-HOUDINI_API=26
+HOUDINI_API=28
 #####--- Import Functions ---#####
 
 # Ensure compatible GearLock version
