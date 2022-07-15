@@ -4,13 +4,13 @@
 
 NAME="Libhoudini_Installer" #Package/Extension Name
 
-CODENAME="libhoudini_installer" #An Unique codename
+CODENAME="libhoudini" #An Unique codename
 
 TYPE="Package" #Specify (Package / Extension)
 
 AUTHOR="natsumerinchan@github&gitee" #Your name as the Developer/Owner/Packer
 
-VERSION="v1.0" #Specify the Version of this package/extension
+VERSION="v1.1" #Specify the Version of this package/extension
 
 SHORTDESC="Install libhoudini arm translation on Android-x86 when you have replaced root manager by Magisk." #Provide a short description about this package/extension
 
