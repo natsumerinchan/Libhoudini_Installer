@@ -14,25 +14,30 @@ x86/x86_64 Android6 - Android9
 #### 4.使用方法
 
 1.  [下载Libhoudini_Installer](https://github.com/natsumerinchan/Libhoudini_Installer/releases)
-2.  下载houdini.sfs https://github.com/SGNight/Arm-NativeBridge
+2.  进入Gearlock Recovery安装本模块
+3.  进入设置打开arm兼容开关，重启
+4.  Enjoy!
 
-- x86 系统只支持"x"版本
-- x86_64 系统可同时使用"y"和"z"版本
-- Android8和Android9只存在"y"版本
+#### 5.如何构建
 
-3.  把你下载的 "houdini.sfs" 重命名为 "houdiniα_β.sfs" .
+```
+git clone https://github.com/AXIM0S/gearlock-dev-kit; cd ./gearlock-dev-kit
+```
 
-- "α" 指Android版本，可为"6"、"7"、"8"、"9"
-- "β" 指系统架构,可为"x","y","z" 
-   - "x"=用于x86系统的arm32兼容层
-   - "y"=用于x86_64系统的arm32兼容层
-   - "z"=用于x86_64系统的arm64兼容层
+```
+./configure; rm -rf ./workdir 
+```
+- 选择 "3) Custom Core Package"
 
-4.  用7-Zip或NanaZip打开Libhoudini_Installer_*.gxp（会被识别为7z文件），把houdini.sfs拖入x86(或x86_64)/arm文件夹
-- "x"放进x86/arm文件夹
-- "y"和"z"放进x86_64/arm文件夹
+```
+git clone -b Android6 https://github.com/natsumerinchan/Libhoudini_Installer.git workdir
+```
 
-5.  进入Gearlock Recovery安装本模块
-6.  进入设置打开arm兼容开关，重启
-7.  Enjoy!
+```
+rm -rf ./workdir/*.md ./workdir/LICENSE ./workdir/.git ./workdir/.gitignore
+```
 
+```
+./build
+``` 
+- 选择 "1) I configured it manually"
