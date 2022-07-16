@@ -4,6 +4,8 @@
 # You must delete this if you dont need it.
 # Note: You don't need to manually deal with this file, GearLock will take care of it.
 
+mount -o remount,rw /
+mount -o remount,rw /system
 if test -d "$SYSTEM_DIR/lib64/hw"; then
 	SYSTEM_ARCH=x86_64
 else
@@ -13,10 +15,6 @@ fi
 if test "$SYSTEM_ARCH" != "x86_64"; then
 	enable_nativebridge
 else
-    if test "$sdk" -ge "26"; then
-            enable_nativebridge
-    else
-            enable_nativebridge
-            enable_nativebridge 64
-    fi  
+        enable_nativebridge
+        enable_nativebridge 64
 fi
