@@ -11,27 +11,30 @@ x86/x86_64 Android6 - Android9
 #### 3.Instructions
 
 1.  Download Libhoudini_Installer from [Releases tag](https://github.com/natsumerinchan/Libhoudini_Installer/releases)
-2.  Download houdini.sfs from https://github.com/SGNight/Arm-NativeBridge
+2.  Install this package by Gearlock Recovery mode
+3.  Go to Settings and turn on the arm compatibility switch,reboot.
+4.  Enjoy!
 
-- x86 only supports "x" version.
-- x86_64 can use "y" and "z" versions at the same time.
-- Android8 and Android9 only have "y" versions.
+#### 4.How to build
 
-3.  Rename your "houdini.sfs" to "houdiniα_β.sfs" .
+```
+git clone https://github.com/AXIM0S/gearlock-dev-kit; cd ./gearlock-dev-kit
+```
 
-- "α" is Android version,it can be "6","7“,"8","9"
-- "β" is system architecture,it can be "x","y","z" 
-   - "x"=arm32 for x86 OS
-   - "y"=arm32 for x86_64 OS
-   - "z"=arm64 for x86_64 OS
+```
+./configure; rm -rf ./workdir 
+```
+- choose "3) Custom Core Package"
 
-4.  Open this package as a .7z file by 7-Zip or NanaZip,put houdini.sfs into x86(or x86_64)/arm folder.
+```
+git clone -b Android9 https://github.com/natsumerinchan/Libhoudini_Installer.git workdir
+```
 
-- "x" version put in x86/arm folder.
-- "y" and "z" versions put in x86_64/arm folder.
+```
+rm -rf ./workdir/*.md ./workdir/LICENSE ./workdir/.git ./workdir/.gitignore
+```
 
-5.  Install this package by Gearlock Recovery mode
-6.  Go to Settings and turn on the arm compatibility switch,reboot.
-7.  Enjoy!
-
-
+```
+./build
+``` 
+- choose "1) I configured it manually"
